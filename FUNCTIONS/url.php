@@ -13,7 +13,7 @@ build_query. Os values são passados pelos controllers no momento
 da autenticação. Esta função basicamente faz o redirecionamento
 no momento do login do usuário, retornando este para o proprio login, ou para a pag. dashboard.
 A função nativa header pega a query string criada pela função build query, concatena com o endereço já passado e faz o redirecionamento.
-O exit indica que nada nenhum outro código deve ser executado
+O exit indica que nenhum outro código deve ser executado
 enquanto o redirecionamento é efetuado.
 
 */
