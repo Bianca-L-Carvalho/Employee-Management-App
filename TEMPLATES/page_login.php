@@ -9,7 +9,7 @@
         </div>
         <div class="form-wrapper">
             <label for="password" class="animatedImput">
-            <input type="password" id="username" name="username" placeholder="Senha">
+            <input type="password" id="password" name="password" placeholder="Senha">
             </label> 
         </div>
         <div class="form-wrapper">
