@@ -132,8 +132,15 @@ select:focus {
     background-color: orangered;
 }
 
-.page-not-found {
+.messages-color {
     margin-top: 15px;
     color: orangered;
+}
+
+.flash-messages {
+    background-color: orangered;
+    padding: 8px;
+    border-radius: 3px;
+    color: white;
 }
 
