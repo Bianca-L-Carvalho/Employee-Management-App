@@ -3,7 +3,7 @@
 function url_redirect ($values = []) {
 $buildQueryString = http_build_query($values);
 header (
-    "http://localhost/Exercícios/primeira-aplicacao-php/?". $buildQueryString);
+    "location: http://localhost/Exercícios/primeira-aplicacao-php?". $buildQueryString);
 exit;
 }
 
