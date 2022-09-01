@@ -9,7 +9,6 @@
         <?php echo PAGE_NAME; ?>
     </title>
     <link rel="stylesheet" href="public/css/flex.css">
-    <link rel="stylesheet" href="public/css/util.css">
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 
