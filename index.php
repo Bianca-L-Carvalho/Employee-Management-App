@@ -11,15 +11,15 @@ require_once "FUNCTIONS/message.php";
 require_once "FUNCTIONS/auth.php";
 
 //pg login é definida como padrão caso nenhuma rota seja definida.
-if(empty($_GET["route"])){
-$page = "login";
-}else{
+if (empty($_GET["route"])) {
+    $page = "login";
+} else {
     $page = $_GET["route"];
 }
 
 // condição p/ caso a rota requerida contenha alguma necessidade de autenticação
 // as quais serão verificadas pelos controladores.
-switch ($page){
+switch ($page) {
     case "dashboard":
         require_once "CONTROLLERS/dashboard.php";
         break;
@@ -28,6 +28,8 @@ switch ($page){
         break;
     case "logout":
         require_once "CONTROLLERS/logout.php";
+    default:
+        break;
 }
 
 $page_template = "TEMPLATES/page_" . $page . ".php";
@@ -37,11 +39,10 @@ require_once "TEMPLATES/head.php";
 // condição abaixo criada pois existem pgs que não foram definidas, como about e contact.
 // Assim, caso a rota seja para estas pgs, devo direcionar o usuário p/ pg not found.
 
-if (file_exists($page_template)){
+if (file_exists($page_template)) {
     require_once $page_template;
-} else{
+} else {
     require_once "TEMPLATES/page_not_found.php";
 }
 
 require_once "TEMPLATES/foot.php";
-
