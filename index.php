@@ -23,7 +23,7 @@ switch ($page) {
     case "dashboard":
         require_once "CONTROLLERS/dashboard.php";
         break;
-    case "authenticate":
+    case "authenticated":
         require_once "CONTROLLERS/authenticated.php";
         break;
     case "logout":
