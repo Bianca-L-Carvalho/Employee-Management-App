@@ -1,14 +1,15 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
-    font-size: 14px;
+    font-size: 16px;
 }
+
 
 .page {
     width: 1400px;
@@ -17,25 +18,31 @@ html, body {
     margin-right: auto;
 }
 
-.menu {
-width: 100%;
-background-color:  #2A2A2A;
-border-radius: 2px;
-padding: 33px 28px;
+.horizontal-line {
+    margin: 5px 0;
+    border-bottom: solid 2px orangered;
+    width: 100%;
 }
 
-.menu ul{
+.menu {
+    width: 100%;
+    background-color: #2A2A2A;
+    border-radius: 2px;
+    padding: 33px 28px;
+}
+
+.menu ul {
     height: 50px;
     list-style: none;
 }
 
-.menu li { 
-list-style-type:none;
-padding-right: 18px;
-padding-left: 18px;
-text-transform: uppercase;
-cursor: pointer;
-transition: grow 500ms ease;
+.menu li {
+    list-style-type: none;
+    padding-right: 18px;
+    padding-left: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: grow 500ms ease;
 
 }
 
@@ -51,3 +58,78 @@ transition: grow 500ms ease;
 .menu a:hover {
     color: orangered;
 }
+
+.form {
+    width: 1400px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.color {
+    background-color: antiquewhite;
+}
+
+.form h2 {
+    padding-top: 18px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    color: #2A2A2A;
+}
+
+
+.form-wrapper {
+    width: 40rem;
+    background: #e7e7e7;
+    padding-top: 22px;
+    padding-left: 20px;
+}
+
+.form-wrapper input {
+    width: 30em;
+    border: 2px solid #fff;
+    box-shadow: none;
+    height: 37px;
+    line-height: 18px;
+    font-size: 18px;
+    font-family: 'latolight';
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+    padding-left: 33.5px;  
+}
+
+input::placeholder {
+    color: black;
+}
+
+
+.form-wrapper input:hover {
+    border: 2px solid orangered;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.form-wrapper button {
+    margin-bottom: 19px;
+    width: 6em;
+    height: 2em;
+    border-radius: 14px;
+    background-color: #2A2A2A;
+    border-color: white;
+    font-size: 18px;
+    font-family: 'latolight';
+    color: white;
+}
+
+.form-wrapper button:hover {
+background-color: orangered;
+}
+
+
+
