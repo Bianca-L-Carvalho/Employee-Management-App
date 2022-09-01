@@ -52,8 +52,8 @@
     </header>
 
     <?php if (get_flash_message()) { ?>
-        <div class="">
-            <div class="">
+        <div class="page">
+            <div class=" flash-messages">
                 <p> <?php echo get_flash_message(); ?> </p>
             </div>
         </div>
